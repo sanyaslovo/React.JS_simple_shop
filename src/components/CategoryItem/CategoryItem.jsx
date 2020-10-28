@@ -1,14 +1,16 @@
 import React from 'react';
 import './CategoryItem.scss';
+import {Link} from "react-router-dom";
 
 const CategoryItem = ({ title, imageUrl, linkUrl, size }) => {
     const img = {
         backgroundImage: 'url(' + imageUrl + ')'
     }
-    const classItemSize = size ? 'itemCategory ' + size : 'itemCategory'
+    const classItemSize = size ? 'itemCategory ' + size : 'itemCategory';
+    const link = `/shop/${linkUrl}`
     return (
-        <a
-            href={linkUrl}
+        <Link
+            to={link}
             className={classItemSize}
         >
             <div
@@ -19,7 +21,7 @@ const CategoryItem = ({ title, imageUrl, linkUrl, size }) => {
                 <span className="category-title">{title}</span>
                 <span className="category-action">SHOP NOW</span>
             </div>
-        </a>
+        </Link>
     )
 };
 
