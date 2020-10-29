@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header';
 import CategoryMenu from '../../components/CategoryMenu/CategoryMenu';
 import { SECTIONS_DATA } from '../../data/sections.data';
 
-const Home = () => {
+const HomePage = () => {
     return (
         <>
             <Header />
@@ -12,4 +12,4 @@ const Home = () => {
     )
 };
 
-export default Home;
+export default HomePage;
