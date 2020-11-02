@@ -1,8 +1,8 @@
 import React from 'react';
 import Logo from '../../assets/crown.svg';
-import ShoppingBag from '../../assets/shopping-bag.svg';
 import './Header.scss';
 import {Link} from "react-router-dom";
+import Cart from "../Cart/Cart";
 
 const Header = () => {
     return (
@@ -15,10 +15,7 @@ const Header = () => {
                 <Link to="/shop" className="option">SHOP</Link>
                 <Link to="/contact" className="option">CONTACT</Link>
                 <Link to="/sign-in" className="option">SIGN IN</Link>
-                <div className="cart">
-                    <img src={ShoppingBag} alt="Logo"/>
-                    <span>0</span>
-                </div>
+                <Cart />
             </div>
         </header>
     )

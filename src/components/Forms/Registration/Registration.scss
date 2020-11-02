@@ -1,0 +1,71 @@
+.registration {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  h2 {margin: 10px 0px;}
+  .form-input {
+    position: relative;
+    margin: 45px 0px;
+    .input {
+      background: none white;
+      color: grey;
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      width: 100%;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-image: initial;
+      border-radius: 0px;
+      border-bottom: 1px solid grey;
+      margin: 25px 0px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .input:focus ~ label {
+      top: -14px;
+      font-size: 12px;
+      color: black;
+    }
+
+    .input[type="password"] {
+      letter-spacing: 0.3em;
+    }
+    label {
+      color: grey;
+      font-size: 16px;
+      font-weight: normal;
+      position: absolute;
+      pointer-events: none;
+      left: 5px;
+      top: 10px;
+      transition: all 300ms ease 0s;
+    }
+  }
+  .registration-btn {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    .submit {
+      min-width: 165px;
+      width: auto;
+      height: 50px;
+      letter-spacing: 0.5px;
+      line-height: 50px;
+      padding: 0px 35px;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-family: "Open Sans Condensed";
+      font-weight: bolder;
+      cursor: pointer;
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      background-color: black;
+      color: white;
+      border: none;
+    }
+  }
+}

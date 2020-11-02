@@ -43,7 +43,7 @@ const Cart = () => {
                                     </li>
                             ))}
                         </ul>
-                        <Link to="checkout" className="btn">go to checkout</Link>
+                        <Link to="/checkout" className="btn">go to checkout</Link>
                     </div>
                 ) : null
             }

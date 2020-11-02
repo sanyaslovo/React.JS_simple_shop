@@ -1,0 +1,30 @@
+.sign-in {
+  width: 850px;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin: 30px auto;
+
+}
+.google-btn {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0px 35px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed";
+  font-weight: bolder;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(66, 133, 244);
+  color: white;
+  &:hover {
+    background-color: rgb(53, 122, 232);
+    border: none;
+  }
+}

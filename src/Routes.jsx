@@ -29,6 +29,11 @@ const routesConfig = [
     },
     {
         exact: true,
+        path: '/checkout',
+        component: lazy(() => import('./pages/checkout-page/CheckoutPage'))
+    },
+    {
+        exact: true,
         path: '/shop/:category',
         component: lazy(() => import('../src/pages/category-page/CategoryPage'))
     },
@@ -37,8 +42,6 @@ const routesConfig = [
         path: '*',
         component: lazy(() => import('./pages/not-found-page/NotFoundPage'))
     }
-
-
 ]
 
 
