@@ -12,9 +12,9 @@ const Header = () => {
                 <img src={Logo} alt="Logo"/>
             </Link>
             <div className="options">
-                <Link to="shop" className="option">SHOP</Link>
-                <Link to="contact" className="option">CONTACT</Link>
-                <Link to="sign-in" className="option">SIGN IN</Link>
+                <Link to="/shop" className="option">SHOP</Link>
+                <Link to="/contact" className="option">CONTACT</Link>
+                <Link to="/sign-in" className="option">SIGN IN</Link>
                 <div className="cart">
                     <img src={ShoppingBag} alt="Logo"/>
                     <span>0</span>

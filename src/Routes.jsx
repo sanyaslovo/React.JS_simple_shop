@@ -3,55 +3,46 @@ import React, {
     Suspense,
     Fragment
 } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Loader from "react-loader";
 
 const routesConfig = [
     {
         exact: true,
-        path: '/shop/shop',
-        component: () => <Redirect to="/shop" />
+        path: '/',
+        component: lazy(() => import('./pages/home-page/HomePage'))
     },
     {
-        path: '/',
-        routes: [
-            {
-                exact: true,
-                path: '/',
-                component: lazy(() => import('./pages/home-page/HomePage'))
-            },
-            {
-                exact: true,
-                path: '/shop',
-                component: lazy(() => import('./pages/shop-page/ShopPage'))
-            },
-            {
-                exact: true,
-                path: '/contact',
-                component: lazy(() => import('./pages/contact-page/ContactPage'))
-            },
-            {
-                exact: true,
-                path: '/sign-in',
-                component: lazy(() => import('./pages/sign-in-page/SignInPage'))
-            },
-            {
-                exact: true,
-                path: '/shop/:category',
-                component: lazy(() => import('../src/pages/category-page/CategoryPage'))
-            },
-            {
-                exact: true,
-                path: '*',
-                component: lazy(() => import('./pages/not-found-page/NotFoundPage'))
-            }
-        ]
+        exact: true,
+        path: '/shop',
+        component: lazy(() => import('./pages/shop-page/ShopPage'))
+    },
+    {
+        exact: true,
+        path: '/contact',
+        component: lazy(() => import('./pages/contact-page/ContactPage'))
+    },
+    {
+        exact: true,
+        path: '/sign-in',
+        component: lazy(() => import('./pages/sign-in-page/SignInPage'))
+    },
+    {
+        exact: true,
+        path: '/shop/:category',
+        component: lazy(() => import('../src/pages/category-page/CategoryPage'))
+    },
+    {
+        exact: true,
+        path: '*',
+        component: lazy(() => import('./pages/not-found-page/NotFoundPage'))
     }
+
+
 ]
 
 
 const renderRoutes = (routes) => (routes ? (
-
     <Suspense fallback={
         <Loader
             loaded={true}
@@ -86,7 +77,6 @@ const renderRoutes = (routes) => (routes ? (
                         key={i}
                         path={route.path}
                         exact={route.exact}
-
                         render={(props) => (
                             <Guard>
                                 <Layout>
