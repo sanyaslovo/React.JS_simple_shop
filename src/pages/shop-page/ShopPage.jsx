@@ -5,7 +5,6 @@ import './ShopPage.scss'
 import SHOP_DATA from '../../data/shop.data'
 import { useHistory } from "react-router";
 
-console.log(SHOP_DATA)
 const ShopPage = () => {
     const history = useHistory();
     return (

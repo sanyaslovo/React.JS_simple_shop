@@ -1,54 +1,45 @@
 import React, { useState } from 'react';
+import { connect } from "react-redux";
+import { selectCartItems } from "../../redux/cart/cart.selectors";
 import ShoppingBag from '../../assets/shopping-bag.svg';
 import './Cart.scss';
 import { Link } from "react-router-dom";
 
-const Cart = () => {
+const Cart = ({ cartItems = {} }) => {
     const [ openCart, setOpenCart ] = useState(false);
-    const test = [
-    {
-        Product: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
-        Description: 'Yellow Track Suit\n',
-        Quantity: '2',
-        Price: '135'
-    },
-    {
-        Product: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
-        Description: 'Yellow Track Suit\n',
-        Quantity: '2',
-        Price: '135'
-    }
-    ]
-    const cartOpenToggle = () => {
-        setOpenCart(!openCart)
-    }
+
+console.log(cartItems)
     return (
         <>
-            <div className="cart" onClick={cartOpenToggle}>
+            <div className="cart" onClick={() => setOpenCart(!openCart)}>
                 <img src={ShoppingBag} alt="Logo"/>
-                <span>{test.length}</span>
+                <span>{ cartItems.reduce((ac, el) => ac + el.quantity, 0) }</span>
             </div>
             {
                 openCart
                 ? (
                     <div className="cart-list">
                         <ul>
-                            {test.map((product, key) => (
-                                <li key={key}  className="cart-item">
-                                    <img src={product.Product} alt={product.Description} />
+                            {cartItems.map((product, index) => (
+                                <li key={index}  className="cart-item">
+                                    <img src={product.imageUrl} alt={product.name} />
                                     <div  className="cart-item-info">
-                                        <span>{product.Description}</span>
-                                        <span>{`${product.Quantity} x $${product.Price}`}</span>
+                                        <span>{product.name}</span>
+                                        <span>{`${product.quantity} x $${product.price}`}</span>
                                     </div>
-                                    </li>
+                                </li>
                             ))}
                         </ul>
                         <Link to="/checkout" className="btn">go to checkout</Link>
                     </div>
-                ) : null
+                ) : []
             }
         </>
     )
 };
 
-export default Cart;
+const mapStateToProps = (state) => ({
+    cartItems: selectCartItems(state),
+});
+
+export default connect(mapStateToProps)(Cart);
