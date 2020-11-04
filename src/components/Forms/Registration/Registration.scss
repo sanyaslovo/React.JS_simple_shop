@@ -29,7 +29,21 @@
       font-size: 12px;
       color: black;
     }
-
+    .input:visited ~ label {
+      top: -14px;
+      font-size: 12px;
+      color: black;
+    }
+    .input:focus-within ~ label {
+      top: -14px;
+      font-size: 12px;
+      color: black;
+    }
+    .input:focus-visible ~ label {
+      top: -14px;
+      font-size: 12px;
+      color: black;
+    }
     .input[type="password"] {
       letter-spacing: 0.3em;
     }

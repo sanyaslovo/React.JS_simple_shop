@@ -11,15 +11,14 @@ const cartReducer = (state = INITIAL_STATE, action) => {
                 cartItem => cartItem.id === action.payload.id
             );
             if (existingCartItem){
-                state.cartItems.map(cartItem =>
+                const cartItems = state.cartItems.map(cartItem =>
                       cartItem.id === action.payload.id
-                          ? { ...cartItem, quantity: cartItem.quantity += 1 }
+                          ? { ...cartItem, quantity: cartItem.quantity + 1 }
                           : cartItem
                 )
-                console.log(state.cartItems)
                 return {
                     ...state,
-                    cartItems: [ ...state.cartItems ]
+                    cartItems: [ ...cartItems ]
                 }
             }
             return {
