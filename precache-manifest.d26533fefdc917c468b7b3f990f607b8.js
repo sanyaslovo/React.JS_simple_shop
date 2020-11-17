@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2c3dd96e829ae965f6870aa1496cc7ae",
+    "revision": "cd75f2be4958776bf29e2c523fa23f85",
     "url": "/react-ecommerce-homepage/index.html"
   },
   {
-    "revision": "b51ce65af38ee7315e37",
-    "url": "/react-ecommerce-homepage/static/css/3.f70260af.chunk.css"
+    "revision": "99433efcd6e2cbc3016e",
+    "url": "/react-ecommerce-homepage/static/css/0.cd605faa.chunk.css"
   },
   {
-    "revision": "ce91c73a69784e3d0076",
-    "url": "/react-ecommerce-homepage/static/css/4.39ff0de9.chunk.css"
+    "revision": "ba4b911adcc77048a4cf",
+    "url": "/react-ecommerce-homepage/static/css/4.f70260af.chunk.css"
   },
   {
-    "revision": "62a80c6f2e535fc0745f",
-    "url": "/react-ecommerce-homepage/static/css/5.cd605faa.chunk.css"
+    "revision": "bf7873bebfcbfeca64c1",
+    "url": "/react-ecommerce-homepage/static/css/5.39ff0de9.chunk.css"
   },
   {
     "revision": "01dcd963c246bdec286c",
@@ -32,28 +32,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-ecommerce-homepage/static/css/9.2754233f.chunk.css"
   },
   {
-    "revision": "6354cece0f997e939946",
+    "revision": "cd203f9648dcb9e4191b",
     "url": "/react-ecommerce-homepage/static/css/main.13820d97.chunk.css"
+  },
+  {
+    "revision": "99433efcd6e2cbc3016e",
+    "url": "/react-ecommerce-homepage/static/js/0.a6b0f250.chunk.js"
   },
   {
     "revision": "4411882b216a8ae826b5",
     "url": "/react-ecommerce-homepage/static/js/10.b6e1539b.chunk.js"
   },
   {
-    "revision": "ec53327e16b3e0966ac8",
-    "url": "/react-ecommerce-homepage/static/js/2.cfeb6974.chunk.js"
+    "revision": "41b0010748e165e857cf",
+    "url": "/react-ecommerce-homepage/static/js/3.5a50c43c.chunk.js"
   },
   {
-    "revision": "b51ce65af38ee7315e37",
-    "url": "/react-ecommerce-homepage/static/js/3.47dc4b9c.chunk.js"
+    "revision": "ba4b911adcc77048a4cf",
+    "url": "/react-ecommerce-homepage/static/js/4.8886bdb2.chunk.js"
   },
   {
-    "revision": "ce91c73a69784e3d0076",
-    "url": "/react-ecommerce-homepage/static/js/4.91debea9.chunk.js"
-  },
-  {
-    "revision": "62a80c6f2e535fc0745f",
-    "url": "/react-ecommerce-homepage/static/js/5.10860e2e.chunk.js"
+    "revision": "bf7873bebfcbfeca64c1",
+    "url": "/react-ecommerce-homepage/static/js/5.637f9493.chunk.js"
   },
   {
     "revision": "01dcd963c246bdec286c",
@@ -72,12 +72,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-ecommerce-homepage/static/js/9.8e406455.chunk.js"
   },
   {
-    "revision": "6354cece0f997e939946",
-    "url": "/react-ecommerce-homepage/static/js/main.48f69350.chunk.js"
+    "revision": "cd203f9648dcb9e4191b",
+    "url": "/react-ecommerce-homepage/static/js/main.1c720740.chunk.js"
   },
   {
-    "revision": "ef71524b5f04b061565e",
-    "url": "/react-ecommerce-homepage/static/js/runtime~main.43246b11.js"
+    "revision": "6fb3ee220ca047d280ea",
+    "url": "/react-ecommerce-homepage/static/js/runtime~main.2e9f24be.js"
   },
   {
     "revision": "ed28accb7dd58a0469bff983503ff07e",
